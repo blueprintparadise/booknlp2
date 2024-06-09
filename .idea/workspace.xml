@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfaf3826-31b1-485d-a105-4df1b60bc64b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/booknlp/booknlp.py" beforeDir="false" afterPath="$PROJECT_DIR$/booknlp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booknlp/common/sequence_layered_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/booknlp/common/sequence_layered_reader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booknlp/english/english_booknlp.py" beforeDir="false" afterPath="$PROJECT_DIR$/booknlp/english/english_booknlp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booknlp/english/gender_inference_model_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/booknlp/english/gender_inference_model_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booknlp/english/tagger.py" beforeDir="false" afterPath="$PROJECT_DIR$/booknlp/english/tagger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/run_booknlp.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/run_booknlp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booknlp.py" beforeDir="false" afterPath="$PROJECT_DIR$/booknlp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emma.book" beforeDir="false" afterPath="$PROJECT_DIR$/emma.book" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emma.book.html" beforeDir="false" afterPath="$PROJECT_DIR$/emma.book.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emma.entities" beforeDir="false" afterPath="$PROJECT_DIR$/emma.entities" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emma.quotes" beforeDir="false" afterPath="$PROJECT_DIR$/emma.quotes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emma.supersense" beforeDir="false" afterPath="$PROJECT_DIR$/emma.supersense" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emma.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/emma.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +37,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.booknlp.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",

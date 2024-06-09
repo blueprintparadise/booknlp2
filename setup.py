@@ -12,7 +12,7 @@ setup(name='booknlp2',
 	install_requires=['torch>=1.7.1',
 					  'tensorflow>=1.15',
 					  'spacy>=3',
-                      'transformers>=4.11.3'         
+                      'transformers==4.11.3'
                       ],
 
 	)

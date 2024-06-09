@@ -6,6 +6,7 @@ from pathlib import Path
 import os
 from booknlp.english.english_booknlp import EnglishBookNLP
 
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 class BookNLP():
 
 	def __init__(self, language, model_params):
@@ -41,7 +42,7 @@ def proc():
 
 
 	model_params={
-		"pipeline":"entity,quote,supersense,event,coref", "model":"small", 
+		"pipeline":"entity,quote,supersense,event,coref", "model":"big",
 	}
 
 	booknlp=BookNLP(language, model_params)

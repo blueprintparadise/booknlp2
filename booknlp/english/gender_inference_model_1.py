@@ -163,7 +163,7 @@ class GenderEM:
 
 	def read_hyperparams(self, filename):
 		self.hyperparameters={}
-		with open(filename) as file:
+		with open(filename, encoding='utf-8') as file:
 			header=file.readline().rstrip()
 			gender_mapping={}
 			for idx, val in enumerate(header.split("\t")[2:]):
@@ -576,8 +576,8 @@ if __name__ == "__main__":
 	ent_files=[]
 	tok_files=[]
 	for idd in (onlyfiles[:num]):
-		entitiyFile=os.path.join(top, idd, "%s.entities" % idd)
-		tokensFile=os.path.join(top, idd, "%s.tokens" % idd)
+		entitiyFile=os.path.join(top, idd, "%s.entities" % idd).replace('\\', '/')
+		tokensFile=os.path.join(top, idd, "%s.tokens" % idd).replace('\\', '/')
 		if isfile(entityFile) and isfile(tokensFile):
 			ent_files.append(entityFile)
 			tok_files.append(tokensFile)

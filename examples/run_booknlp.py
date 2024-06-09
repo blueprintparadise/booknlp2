@@ -1,4 +1,4 @@
-from booknlp.booknlp import BookNLP
+from booknlp import BookNLP
 
 model_params={
         "pipeline":"entity,quote,supersense,event,coref", 

@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: booknlp2
+Version: 1.0
+Home-page: https://github.com/blueprintparadise/booknlp2
+Author: Rushikesh Hiray
+Author-email: rhiray03@gmail.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: torch>=1.7.1
+Requires-Dist: tensorflow>=1.15
+Requires-Dist: spacy>=3
+Requires-Dist: transformers==4.11.3

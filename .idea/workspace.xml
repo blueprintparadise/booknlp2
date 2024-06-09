@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfaf3826-31b1-485d-a105-4df1b60bc64b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/emma.book" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emma.book.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emma.entities" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emma.quotes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emma.supersense" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/emma.tokens" beforeDir="false" />
-    </list>
+    <list default="true" id="bfaf3826-31b1-485d-a105-4df1b60bc64b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

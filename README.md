@@ -1,7 +1,11 @@
 # booknlp2
 A successor to booknlp, aiming to fix bugs and improve model performance
 
-This library is inspired by the works of 
+
+
+This library is inspired by the works of https://github.com/dbamman
+
+ 
 
 
 
@@ -47,7 +51,7 @@ conda activate booknlp
 * Install booknlp and download Spacy model.
 
 ```sh
-pip install booknlp
+pip install booknlp2
 python -m spacy download en_core_web_sm
 ```
 

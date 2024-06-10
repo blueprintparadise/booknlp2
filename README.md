@@ -42,8 +42,8 @@ GPU time, Titan RTX (mins.)*|2.1|2.2|
 * Create anaconda environment, if desired. First [download and install anaconda](https://www.anaconda.com/download/); then create and activate fresh environment.
 
 ```sh
-conda create --name booknlp python=3.7
-conda activate booknlp
+conda create --name booknlp2 python=3.7
+conda activate booknlp2
 ```
 
 * If using a GPU, install pytorch for your system and CUDA version by following installation instructions on  [https://pytorch.org](https://pytorch.org).

@@ -1,7 +1,9 @@
+
+![image](https://github.com/blueprintparadise/booknlp2/assets/29310954/21c7b123-3c28-4c49-a927-8e1dad9d6a21)
+
+
 # booknlp2
 A successor to booknlp, aiming to fix bugs and improve model performance
-
-
 
 This library is inspired by the works of https://github.com/dbamman
 

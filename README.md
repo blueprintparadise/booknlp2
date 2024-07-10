@@ -14,7 +14,7 @@ This library is inspired by the works of https://github.com/dbamman
 
 BookNLP is a natural language processing pipeline that scales to books and other long documents (in English), including:
 
-* Part-of-speech tagging
+* Part-of-speech  tagging
 * Dependency parsing
 * Entity recognition
 * Character name clustering (e.g., "Tom", "Tom Sawyer", "Mr. Sawyer", "Thomas Sawyer" -> TOM_SAWYER) and coreference resolution

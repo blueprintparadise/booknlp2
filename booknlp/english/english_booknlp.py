@@ -45,7 +45,7 @@ class EnglishBookNLP:
 				self.gender_cats=model_params["referential_gender_cats"]
 
 			home = str(Path.home())
-			modelPath=os.path.join(home, "booknlp_models").replace('\\', '/')
+			modelPath=os.path.join(home, "booknlp_models")
 			if "model_path"  in model_params:			
 				modelPath=model_params["model_path"]
 
@@ -57,20 +57,20 @@ class EnglishBookNLP:
 				corefName="coref_google_bert_uncased_L-12_H-768_A-12-v1.0.model"
 				quoteAttribName="speaker_google_bert_uncased_L-12_H-768_A-12-v1.0.1.model"
 
-				self.entityPath=os.path.join(modelPath, entityName).replace('\\', '/')
+				self.entityPath=os.path.join(modelPath, entityName)
 				if not Path(self.entityPath).is_file():
 					print("downloading %s" % entityName)
-					urllib.request.urlretrieve("http://ischool.berkeley.edu/~dbamman/booknlp_models/%s" % entityName, self.entityPath)
+					urllib.request.urlretrieve("http://people.ischool.berkeley.edu/~dbamman/booknlp_models/%s" % entityName, self.entityPath)
 
-				self.coref_model=os.path.join(modelPath, corefName).replace('\\', '/')
+				self.coref_model=os.path.join(modelPath, corefName)
 				if not Path(self.coref_model).is_file():
 					print("downloading %s" % corefName)
-					urllib.request.urlretrieve("http://ischool.berkeley.edu/~dbamman/booknlp_models/%s" % corefName, self.coref_model)
+					urllib.request.urlretrieve("http://people.ischool.berkeley.edu/~dbamman/booknlp_models/%s" % corefName, self.coref_model)
 
-				self.quoteAttribModel=os.path.join(modelPath, quoteAttribName).replace('\\', '/')
+				self.quoteAttribModel=os.path.join(modelPath, quoteAttribName)
 				if not Path(self.quoteAttribModel).is_file():
 					print("downloading %s" % quoteAttribName)
-					urllib.request.urlretrieve("http://ischool.berkeley.edu/~dbamman/booknlp_models/%s" % quoteAttribName, self.quoteAttribModel)
+					urllib.request.urlretrieve("http://people.ischool.berkeley.edu/~dbamman/booknlp_models/%s" % quoteAttribName, self.quoteAttribModel)
 
 
 			elif model_params["model"] == "small":
@@ -78,20 +78,20 @@ class EnglishBookNLP:
 				corefName="coref_google_bert_uncased_L-2_H-256_A-4-v1.0.model"
 				quoteAttribName="speaker_google_bert_uncased_L-8_H-256_A-4-v1.0.1.model"
 
-				self.entityPath=os.path.join(modelPath, entityName).replace('\\', '/')
+				self.entityPath=os.path.join(modelPath, entityName)
 				if not Path(self.entityPath).is_file():
 					print("downloading %s" % entityName)
-					urllib.request.urlretrieve("http://ischool.berkeley.edu/~dbamman/booknlp_models/%s" % entityName, self.entityPath)
+					urllib.request.urlretrieve("http://people.ischool.berkeley.edu/~dbamman/booknlp_models/%s" % entityName, self.entityPath)
 
-				self.coref_model=os.path.join(modelPath, corefName).replace('\\', '/')
+				self.coref_model=os.path.join(modelPath, corefName)
 				if not Path(self.coref_model).is_file():
 					print("downloading %s" % corefName)
-					urllib.request.urlretrieve("http://ischool.berkeley.edu/~dbamman/booknlp_models/%s" % corefName, self.coref_model)
+					urllib.request.urlretrieve("http://people.ischool.berkeley.edu/~dbamman/booknlp_models/%s" % corefName, self.coref_model)
 
-				self.quoteAttribModel=os.path.join(modelPath, quoteAttribName).replace('\\', '/')
+				self.quoteAttribModel=os.path.join(modelPath, quoteAttribName)
 				if not Path(self.quoteAttribModel).is_file():
 					print("downloading %s" % quoteAttribName)
-					urllib.request.urlretrieve("http://ischool.berkeley.edu/~dbamman/booknlp_models/%s" % quoteAttribName, self.quoteAttribModel)
+					urllib.request.urlretrieve("http://people.ischool.berkeley.edu/~dbamman/booknlp_models/%s" % quoteAttribName, self.quoteAttribModel)
 
 			elif model_params["model"] == "custom":
 				self.entityPath=model_params["entity_model_path"]
@@ -336,7 +336,7 @@ class EnglishBookNLP:
 			start_time = time.time()
 			originalTime=start_time
 
-			with open(filename, encoding='utf-8') as file:
+			with open(filename) as file:
 				data=file.read()
 
 				if len(data) == 0:
@@ -603,5 +603,4 @@ class EnglishBookNLP:
 
 				print("--- TOTAL (excl. startup): %.3f seconds ---, %s words" % (time.time() - originalTime, len(tokens)))
 				return time.time() - originalTime
-
 
